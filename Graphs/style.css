@@ -40,8 +40,9 @@ h3{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     animation: float-in 0.3s ease-out forwards;
     display: flex;
-    flex-direction: column;
-    height: 90vh;
+    justify-content: center;
+    flex-direction:row;
+    height: 80vh;
     width: auto;
 }
 
@@ -115,7 +116,12 @@ h3{
     }
   
     .modal {
-      left: calc(50% - 20rem);
-      width: 40rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        left: calc(50% - 20rem);
+        width: 30rem;
     }
   }
