@@ -5,7 +5,7 @@ class HandleDB():
     def __init__(self, database):
         self.database = database
         self.connection = None
-        self.tableList_df = None
+        self.dataDB = None
 
     def openConnectDB(self):
         print("\nOpen the connection with %s\n" %(self.database))
@@ -23,5 +23,5 @@ class HandleDB():
         if self.connection == None:
             self.openConnectDB()
 
-        self.tableList_df = pd.read_sql_query(callCommand, self.connection)
-        return self.tableList_df
+        self.dataDB = pd.read_sql_query(callCommand, self.connection)
+        return self.dataDB

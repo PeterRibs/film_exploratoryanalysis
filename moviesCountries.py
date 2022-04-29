@@ -1,6 +1,5 @@
 import warnings
 import pycountry
-import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -9,11 +8,10 @@ warnings.filterwarnings("ignore")
 sns.set_theme(style = "whitegrid")
 
 from handle_db import HandleDB
-from dataProcessing import DataProcessing
 
-# What is the number of movies produced per country?
+# What is the number of Movies produced per Country?
 
-class MoviesCountry(HandleDB):
+class MoviesCountries(HandleDB):
 
     def __init__(self, database, command):
         super().__init__(database)
@@ -29,11 +27,11 @@ class MoviesCountry(HandleDB):
         count = []
 
         # Loop para obter o país de acordo com a região
-        for i in range(self.tableList_df.shape[0]):
+        for i in range(self.dataDB.shape[0]):
             try:
-                coun = self.tableList_df['region'].values[i]
+                coun = self.dataDB['region'].values[i]
                 countryNames.append(pycountry.countries.get(alpha_2 = coun).name)
-                count.append(self.tableList_df['Number_of_movies'].values[i])
+                count.append(self.dataDB['Number_of_movies'].values[i])
             except: 
                 continue
 
