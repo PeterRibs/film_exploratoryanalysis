@@ -36,4 +36,6 @@ First you need to install the `imdb-sqlite` package using the following command 
 
 Once installed you need to run `imdb-sqlite` using the `imdb-sqlite` command at the prompt, this will download and create a database with the IMDb data.
 
+- See more in 'https://pypi.org/project/imdb-sqlite/'
+
 To run each Exploratory Analysis use the `main.py` file uncommenting the part of the question of interest.
