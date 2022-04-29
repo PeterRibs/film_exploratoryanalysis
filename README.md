@@ -1,6 +1,6 @@
 # Exploratory Analysis: Film Data
 
-Using real data publicly available on IMDB to answer 9 questions. Each question was answered using a separate file and independent of the other questions. The file name will be after the questions asked. The graphs and tables produced in order to answer the questions are in the 'Graphs' folder or 'https://peterribs.github.io/film_exploratoryanalysis/'. The names of the figures are as 'FIG_'+'name of the file that gave origin'.
+Using real data publicly available on IMDb to answer 9 questions. Each question was answered using a separate file and independent of the other questions. The file name will be after the questions asked. The graphs and tables produced in order to answer the questions are in the 'Graphs' folder or 'https://peterribs.github.io/film_exploratoryanalysis/'. The names of the figures are as 'FIG_'+'name of the file that gave origin'.
 
 ## Questions:
 
@@ -31,4 +31,9 @@ Using real data publicly available on IMDB to answer 9 questions. Each question 
 
 ## Run
 
-To run each one use the `main.py` file uncommenting the part of the question of interest.
+First you need to install the `imdb-sqlite` package using the following command at the prompt:
+- `pip install -q imdb-sqlite`
+- 
+Once installed you need to run `imdb-sqlite` using the `imdb-sqlite` command at the prompt, this will download and create a database with the IMDb data.
+
+To run each Exploratory Analysis use the `main.py` file uncommenting the part of the question of interest.
