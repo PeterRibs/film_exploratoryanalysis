@@ -33,7 +33,7 @@ Using real data publicly available on IMDb to answer 9 questions. Each question 
 
 First you need to install the `imdb-sqlite` package using the following command at the prompt:
 - `pip install -q imdb-sqlite`
-- 
+
 Once installed you need to run `imdb-sqlite` using the `imdb-sqlite` command at the prompt, this will download and create a database with the IMDb data.
 
 To run each Exploratory Analysis use the `main.py` file uncommenting the part of the question of interest.
